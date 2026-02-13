@@ -1,0 +1,70 @@
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+# --- Build & Output (Gradle/Maven) ---
+build/
+target/
+.gradle/
+out/
+bin/
+
+# --- IDE Specific Files (IntelliJ, Eclipse) ---
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# --- Temporary & Secret Files ---
+*.class
+*.log
+*.tmp
+*.swp
+*~
+.DS_Store
+.env
+.env.local
+
+# --- Groovy specific ---
+*.groovy.old
+
+
+# Ignorar bibliotecas externas e binários
+*.jar
+*.war
+.lib/
+.idea
+LearningGroovy.iml
