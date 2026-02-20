@@ -1,0 +1,27 @@
+package Lesson22
+
+import groovy.json.JsonBuilder
+
+JsonBuilder jb = new JsonBuilder()
+
+jb.books{
+
+    book{
+        title "The 4 hour work"
+        isbn "978-0-387-46535-1"
+        author (first: "Timothy", last: "Ferriss", twitter: "@tferriss")
+        related "The 4 hour body", "The 4 hour chef"
+    }
+
+    nextBook{
+        title "#AskGarylee"
+        isbn "978-0-06-227312-3"
+        author (first: "Gary", last: "Vaynerchuck", twitter: "@garyvee")
+        related "Jab, Jab, Jab, Right Hook", "Crush It!"
+    }
+
+
+}
+
+println(jb.toPrettyString())
+new File("json/books.json").write(jb.toPrettyString())
